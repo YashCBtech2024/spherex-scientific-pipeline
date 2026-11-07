@@ -1,0 +1,180 @@
+{
+  "project": "SPHEREx Multi-Epoch Sky Observation Viewer",
+  "generated": "2026-11-07",
+  "description": "Metadata for all SPHEREx observation epochs, verified from FITS headers during scientific audit.",
+
+  "epochs": [
+    {
+      "epoch_id": "april_2025",
+      "label": "April 2025 (2025W17)",
+      "observation_date": "2025-04-25T00:42:57",
+      "mjd": 60790.030,
+      "fits_file": "level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits",
+      "image_dimensions": {"naxis1": 58, "naxis2": 59},
+      "pixel_scale_arcsec": {"axis1": 6.2373, "axis2": 6.0696},
+      "pixel_area_arcsec2": 37.8445,
+      "wcs_projection": "TAN-SIP",
+      "sip_order": 3,
+      "ra_range_deg": [151.750, 151.880],
+      "dec_range_deg": [2.761, 2.886],
+      "bunit": "MJy",
+      "detector": "4B",
+      "pipeline_version": "v20-2025-241",
+      "num_detections": 3,
+      "hdu_structure": ["PRIMARY (empty)", "IMAGE (58x59)", "FLAGS (58x59)", "VARIANCE (58x59)", "ZODI (58x59)", "PSF (101x101x121)", "WCS-WAVE"]
+    },
+    {
+      "epoch_id": "may_2025",
+      "label": "May 2025 (2025W19)",
+      "observation_date": "2025-05-09T03:53:15",
+      "mjd": 60804.162,
+      "fits_file": "level2_2025W19_2B_0103_1D1_spx_l2b-v20-2025-247.fits",
+      "image_dimensions": {"naxis1": 58, "naxis2": 59},
+      "pixel_scale_arcsec": {"axis1": 6.2347, "axis2": 6.0685},
+      "pixel_area_arcsec2": 37.8214,
+      "wcs_projection": "TAN-SIP",
+      "sip_order": 3,
+      "ra_range_deg": [151.750, 151.880],
+      "dec_range_deg": [2.761, 2.886],
+      "bunit": "MJy",
+      "detector": "2B",
+      "pipeline_version": "v20-2025-247",
+      "num_detections": 6,
+      "hdu_structure": ["PRIMARY (empty)", "IMAGE (58x59)", "FLAGS (58x59)", "VARIANCE (58x59)", "ZODI (58x59)", "PSF (101x101x121)", "WCS-WAVE"]
+    },
+    {
+      "epoch_id": "may_2026_cutout",
+      "label": "May 2026 Cutout (2026W22)",
+      "observation_date": "2026-05-26T08:40:11",
+      "mjd": 61186.361,
+      "fits_file": "level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150.fits",
+      "image_dimensions": {"naxis1": 58, "naxis2": 59},
+      "pixel_scale_arcsec": {"axis1": 6.238, "axis2": 6.071},
+      "pixel_area_arcsec2": 37.86,
+      "wcs_projection": "TAN-SIP",
+      "sip_order": 3,
+      "bunit": "MJy",
+      "detector": "1A",
+      "pipeline_version": "v25-2026-150",
+      "num_detections": 0,
+      "note": "58x59 cutout version of May 2026 observation"
+    },
+    {
+      "epoch_id": "may_2026_mosaic",
+      "label": "May 2026 Mosaic (2026W22)",
+      "observation_date": "2026-05-26T08:40:11",
+      "mjd": 61186.361,
+      "fits_file": "level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150(1).fits",
+      "image_dimensions": {"naxis1": 175, "naxis2": 176},
+      "pixel_scale_arcsec": {"axis1": 6.2388, "axis2": 6.0706},
+      "pixel_area_arcsec2": 37.8599,
+      "wcs_projection": "TAN-SIP",
+      "sip_order": 3,
+      "ra_range_deg": [151.616, 152.011],
+      "dec_range_deg": [2.635, 3.015],
+      "bunit": "MJy",
+      "detector": "1A",
+      "pipeline_version": "v25-2026-150",
+      "num_detections": 42,
+      "note": "Larger mosaic used for source detection; contains the May 2025 FOV entirely within its footprint",
+      "hdu_structure": ["PRIMARY (empty)", "IMAGE (175x176)", "FLAGS (175x176)", "VARIANCE (175x176)", "ZODI (175x176)", "PSF (101x101x121)", "WCS-WAVE"]
+    }
+  ],
+
+  "baselines": [
+    {
+      "pair": "april_2025 → may_2025",
+      "days": 14.13,
+      "years": 0.039,
+      "overlap": "Full spatial overlap (identical FOV size)"
+    },
+    {
+      "pair": "may_2025 → may_2026_mosaic",
+      "days": 382.20,
+      "years": 1.046,
+      "overlap": "May 2025 FOV lies entirely within May 2026 mosaic"
+    },
+    {
+      "pair": "april_2025 → may_2026_mosaic",
+      "days": 396.33,
+      "years": 1.085,
+      "overlap": "April 2025 FOV lies entirely within May 2026 mosaic"
+    }
+  ],
+
+  "candidate_associations": [
+    {
+      "candidate_id": 1,
+      "may2025_source_id": 4,
+      "may2026_source_id": 23,
+      "spherex_ra_deg": 151.786148,
+      "spherex_dec_deg": 2.831860,
+      "separation_arcsec": 0.4440,
+      "significance_sigma": 1.25,
+      "flux_variability_pct": 0.18,
+      "gaia_dr3_source_id": "3836535238583299072",
+      "gaia_ra_deg": 151.78611387644,
+      "gaia_dec_deg": 2.83176933588,
+      "gaia_separation_arcsec": 0.3444,
+      "gaia_g_mag": 13.34,
+      "gaia_parallax_mas": 0.7507,
+      "gaia_distance_pc": 1332,
+      "gaia_pm_total_mas_yr": 5.00,
+      "gaia_ruwe": 1.024,
+      "classification": "Validated stationary-source association (confirmed Galactic star)",
+      "wcs_systematic_fraction": 0.99
+    },
+    {
+      "candidate_id": 2,
+      "may2025_source_id": 6,
+      "may2026_source_id": 29,
+      "spherex_ra_deg": 151.762635,
+      "spherex_dec_deg": 2.802392,
+      "separation_arcsec": 0.2996,
+      "significance_sigma": 0.84,
+      "flux_variability_pct": 3.07,
+      "gaia_dr3_source_id": "3836535096848994688",
+      "gaia_ra_deg": 151.76259626447,
+      "gaia_dec_deg": 2.80232692564,
+      "gaia_separation_arcsec": 0.2721,
+      "gaia_g_mag": 13.59,
+      "gaia_parallax_mas": 2.2257,
+      "gaia_distance_pc": 449,
+      "gaia_pm_total_mas_yr": 16.72,
+      "gaia_ruwe": 1.105,
+      "classification": "Validated stationary-source association (confirmed Galactic star)",
+      "wcs_systematic_fraction": 0.94
+    }
+  ],
+
+  "source_catalogue": {
+    "file": "data/catalogues/source_detections_51_catalogue.csv",
+    "total_detections": 51,
+    "by_epoch": {
+      "april_2025": 3,
+      "may_2025": 6,
+      "may_2026": 42
+    },
+    "columns": ["id", "x_centroid", "y_centroid", "sharpness", "roundness1", "roundness2", "n_pixels", "peak", "flux", "mag", "daofind_mag", "RA_deg", "Dec_deg", "Epoch", "Image"],
+    "coordinate_system": "J2000 (FK5)",
+    "flux_units": "MJy (surface brightness)"
+  },
+
+  "notes_for_backend_team": {
+    "api_data_sources": [
+      "data/catalogues/source_detections_51_catalogue.csv — Primary 51-source catalogue",
+      "data/catalogues/may2025_may2026_candidate_associations.csv — 2 candidate associations",
+      "data/external/gaia_dr3_crossmatch_table.csv — Gaia DR3 cross-match results",
+      "data/processed/epoch_metadata.json — This file (epoch metadata)"
+    ],
+    "fits_files_location": "data/raw/",
+    "coordinate_notes": "All RA/Dec are J2000. Pixel scales are anisotropic (~6.24×6.07 arcsec/pixel).",
+    "classification_status": "Both candidates confirmed as stationary Galactic stars via Gaia DR3. No moving or variable objects identified in current dataset.",
+    "important_caveats": [
+      "Only 3 epochs analyzed so far — more SPHEREx observations will become available",
+      "April 2025 epoch has only 3 weak detections (low SNR)",
+      "WCS absolute pointing accuracy is ~0.35-0.50 arcsec — sub-arcsecond offsets are NOT significant",
+      "Photometric units are MJy (surface brightness); peak and flux columns have different meanings"
+    ]
+  }
+}

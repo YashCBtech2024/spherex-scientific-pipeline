@@ -1,0 +1,655 @@
+{
+  "records": [
+    {
+      "candidate_id": "SPHX-2025-04-25-001",
+      "ra": 151.8159580334045,
+      "dec": 2.8015405314683095,
+      "observation_dates": [
+        "2025-04-25T00:42:57.413Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-04-25",
+        "source_detection_index": 0,
+        "flux_Jy_uncorrected": 0.00026592062441110057,
+        "flux_unc_Jy_empirical": 5.677326507280706e-05,
+        "snr_aperture": 4.683905779772911,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-04-25-002",
+      "ra": 151.81258742621236,
+      "dec": 2.8193151142054513,
+      "observation_dates": [
+        "2025-04-25T00:42:57.413Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-04-25",
+        "source_detection_index": 1,
+        "flux_Jy_uncorrected": 0.0017229787208070603,
+        "flux_unc_Jy_empirical": 5.7212479618427304e-05,
+        "snr_aperture": 30.115435169010123,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-04-25-003",
+      "ra": 151.84550675801015,
+      "dec": 2.8235382666868185,
+      "observation_dates": [
+        "2025-04-25T00:42:57.413Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-04-25",
+        "source_detection_index": 2,
+        "flux_Jy_uncorrected": 0.003522382428099662,
+        "flux_unc_Jy_empirical": 5.6640693306727295e-05,
+        "snr_aperture": 62.18819407850193,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-04-25-004",
+      "ra": 151.83476847769995,
+      "dec": 2.8427690570144213,
+      "observation_dates": [
+        "2025-04-25T00:42:57.413Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-04-25",
+        "source_detection_index": 3,
+        "flux_Jy_uncorrected": 0.00043498505337821535,
+        "flux_unc_Jy_empirical": 5.6805843952578425e-05,
+        "snr_aperture": 7.657399716503487,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-04-25-005",
+      "ra": 151.8091496301822,
+      "dec": 2.8517915745807385,
+      "observation_dates": [
+        "2025-04-25T00:42:57.413Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-04-25",
+        "source_detection_index": 4,
+        "flux_Jy_uncorrected": 0.00010914830672589286,
+        "flux_unc_Jy_empirical": 5.721445126176846e-05,
+        "snr_aperture": 1.9077052094149396,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-001",
+      "ra": 151.83800375228125,
+      "dec": 2.7911349674067196,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 0,
+        "flux_Jy_uncorrected": 0.00016980600648310127,
+        "flux_unc_Jy_empirical": 6.324508955329509e-05,
+        "snr_aperture": 2.6848883871056883,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-002",
+      "ra": 151.81246025332135,
+      "dec": 2.8194734347961554,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 1,
+        "flux_Jy_uncorrected": 0.0019088803157380617,
+        "flux_unc_Jy_empirical": 6.40024939885858e-05,
+        "snr_aperture": 29.825092692145585,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-003",
+      "ra": 151.84525515881236,
+      "dec": 2.8235675633167396,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 2,
+        "flux_Jy_uncorrected": 0.0034405735155501045,
+        "flux_unc_Jy_empirical": 6.366935248784157e-05,
+        "snr_aperture": 54.03814207482515,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-004",
+      "ra": 151.78615973873428,
+      "dec": 2.8318039773963926,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 3,
+        "flux_Jy_uncorrected": 0.02476680531227488,
+        "flux_unc_Jy_empirical": 6.323110633540858e-05,
+        "snr_aperture": 391.68704689270623,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-005",
+      "ra": 151.83453242153584,
+      "dec": 2.8433445879275823,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 4,
+        "flux_Jy_uncorrected": 0.0004954418287802669,
+        "flux_unc_Jy_empirical": 6.380991718762812e-05,
+        "snr_aperture": 7.764339002720511,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-006",
+      "ra": 151.80907534371457,
+      "dec": 2.8520550465182195,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 5,
+        "flux_Jy_uncorrected": 0.0002600547268592931,
+        "flux_unc_Jy_empirical": 6.394245615894032e-05,
+        "snr_aperture": 4.067011849105091,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2025-05-09-007",
+      "ra": 151.79442830562147,
+      "dec": 2.868200392385666,
+      "observation_dates": [
+        "2025-05-09T03:53:15.489Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2025-05-09",
+        "source_detection_index": 6,
+        "flux_Jy_uncorrected": 9.320328725258237e-05,
+        "flux_unc_Jy_empirical": 6.30152497363417e-05,
+        "snr_aperture": 1.4790592379233376,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-001",
+      "ra": 151.8379080830254,
+      "dec": 2.7914429153016678,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 0,
+        "flux_Jy_uncorrected": 0.00023805073764263666,
+        "flux_unc_Jy_empirical": 6.790519634306748e-05,
+        "snr_aperture": 3.5056335959912075,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-002",
+      "ra": 151.81228241876298,
+      "dec": 2.81950302288834,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 1,
+        "flux_Jy_uncorrected": 0.001994707505610715,
+        "flux_unc_Jy_empirical": 6.862722991056546e-05,
+        "snr_aperture": 29.065831568754916,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-003",
+      "ra": 151.84502547733058,
+      "dec": 2.8236279985263533,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 2,
+        "flux_Jy_uncorrected": 0.003814467921412604,
+        "flux_unc_Jy_empirical": 6.829466130522113e-05,
+        "snr_aperture": 55.85309083480274,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-004",
+      "ra": 151.78602401194544,
+      "dec": 2.831612651976882,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 3,
+        "flux_Jy_uncorrected": 0.024235113192837467,
+        "flux_unc_Jy_empirical": 6.830466331648726e-05,
+        "snr_aperture": 354.8090571875733,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-005",
+      "ra": 151.8094468974769,
+      "dec": 2.8405543661524972,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 4,
+        "flux_Jy_uncorrected": 0.003814900217520488,
+        "flux_unc_Jy_empirical": 6.836695843749768e-05,
+        "snr_aperture": 55.80035012100383,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-006",
+      "ra": 151.8344270722804,
+      "dec": 2.8428387975665483,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 5,
+        "flux_Jy_uncorrected": 0.00031953409504721517,
+        "flux_unc_Jy_empirical": 6.793121946117479e-05,
+        "snr_aperture": 4.703788590602892,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    },
+    {
+      "candidate_id": "SPHX-2026-05-26-007",
+      "ra": 151.79356716884791,
+      "dec": 2.873606931688238,
+      "observation_dates": [
+        "2026-05-26T08:40:11.829Z"
+      ],
+      "bands_observed": [],
+      "displacement_arcsec": null,
+      "displacement_uncertainty_arcsec": null,
+      "displacement_significance_sigma": null,
+      "delta_brightness_mag": null,
+      "delta_brightness_uncertainty_mag": null,
+      "delta_brightness_significance_sigma": null,
+      "quality_indicators": [
+        "common_coverage",
+        "reprojected",
+        "preliminary_aperture_photometry"
+      ],
+      "has_quality_warnings": true,
+      "scientific_interpretation": null,
+      "scientific_summary": "Preliminary single-epoch detection; no validated cross-epoch identity or classification.",
+      "validation_status": "Inconclusive",
+      "provenance": {
+        "epoch": "2026-05-26",
+        "source_detection_index": 6,
+        "flux_Jy_uncorrected": 0.0003048351198375172,
+        "flux_unc_Jy_empirical": 6.207309383262717e-05,
+        "snr_aperture": 4.910905853339119,
+        "photometry_unit": "Jy, uncorrected aperture sum",
+        "uncertainty_note": "Empirical RMS; interpolation covariance omitted."
+      },
+      "api_compatible_without_backend_changes": false
+    }
+  ],
+  "required_backend_changes": [
+    "allow null scientific metrics and interpretation",
+    "accept provenance extension",
+    "frontend must render unavailable values safely"
+  ]
+}

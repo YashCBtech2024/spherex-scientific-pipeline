@@ -1,0 +1,53 @@
+# Python bytecode and test/cache output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Virtual environments
+.venv/
+.venv*/
+venv/
+env/
+ENV/
+
+# Build/package artifacts
+build/
+dist/
+*.egg-info/
+
+# Temporary and editor files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scientific plotting caches
+.mplconfig/
+data/processed/.mplconfig/
+.ipynb_checkpoints/
+
+# Teammate reference checkouts are separate repositories and must not be nested here
+reference_repos/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+.streamlit/secrets.toml
+secrets.toml
+credentials.json
+
+# Scientific FITS, CSV, notebooks, reports and handoff ZIPs are intentionally tracked.

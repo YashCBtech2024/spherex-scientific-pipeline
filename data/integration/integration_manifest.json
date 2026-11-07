@@ -1,0 +1,108 @@
+{
+  "files": [
+    {
+      "path": "data\\catalogues\\reprocessed\\2025-04-25_detections_photometry.csv",
+      "purpose": "Per-epoch detections and aperture photometry",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\2025-05-09_detections_photometry.csv",
+      "purpose": "Per-epoch detections and aperture photometry",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\2026-05-26_detections_photometry.csv",
+      "purpose": "Per-epoch detections and aperture photometry",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\historical_candidate_reassessment.json",
+      "purpose": "Historical candidate positional reassessment",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Review or science-side import; not a final classification"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\per_epoch_photometry.png",
+      "purpose": "Per-epoch aperture flux visualization",
+      "units": "image pixels",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\three_epoch_master_associations.csv",
+      "purpose": "Provisional master coordinate associations",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Review or science-side import; not a final classification"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\three_epoch_master_associations.json",
+      "purpose": "Provisional master coordinate associations",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Review or science-side import; not a final classification"
+    },
+    {
+      "path": "data\\catalogues\\reprocessed\\three_epoch_source_overlays.png",
+      "purpose": "Source overlay visualization",
+      "units": "image pixels",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\integration\\candidate_payloads_provisional.json",
+      "purpose": "Integration export/metadata",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Review or science-side import; not a final classification"
+    },
+    {
+      "path": "data\\integration\\source_measurements_for_import.csv",
+      "purpose": "Integration export/metadata",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\2025-04-25_common_aligned.fits",
+      "purpose": "Three-epoch aligned image on shared TAN grid",
+      "units": "MJy/sr",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\2025-05-09_common_aligned.fits",
+      "purpose": "Three-epoch aligned image on shared TAN grid",
+      "units": "MJy/sr",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\2026-05-26_common_aligned.fits",
+      "purpose": "Three-epoch aligned image on shared TAN grid",
+      "units": "MJy/sr",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\three_epoch_common_comparison.png",
+      "purpose": "Three-epoch image comparison",
+      "units": "image pixels",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\three_epoch_common_comparison_v2.png",
+      "purpose": "Three-epoch image comparison",
+      "units": "image pixels",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\three_epoch_common_coverage_mask.fits",
+      "purpose": "Common-coverage mask",
+      "units": "MJy/sr",
+      "api_usage": "Data/preview artifact"
+    },
+    {
+      "path": "data\\processed\\aligned_validated\\three_epoch_common_metadata.json",
+      "purpose": "Integration export/metadata",
+      "units": "RA/Dec degrees; flux Jy uncorrected aperture; flux error Jy empirical; separation arcsec",
+      "api_usage": "Data/preview artifact"
+    }
+  ],
+  "backend_contract_note": "Current Pydantic CandidateSummary requires non-null float significance/displacement/photometry fields and non-null ScientificCategory. Honest nulls therefore cannot be accepted without model changes.",
+  "frontend_note": "Current detail/overview formats significance and magnitude as numeric values; frontend must guard null values."
+}

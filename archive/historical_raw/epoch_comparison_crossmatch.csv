@@ -1,0 +1,13 @@
+Comparison,Source_ID_from_first_epoch,Nearest_source_ID_second_epoch,Separation_arcsec,Within_2_arcsec,Interpretation
+April_2025_to_May_2025,1,2,1.447650696718866,True,close positional match; not motion-confirmed
+April_2025_to_May_2025,2,5,1.199803637256831,True,close positional match; not motion-confirmed
+April_2025_to_May_2025,3,3,119.253603218063,False,no close match
+May_2025_to_May_2026,1,14,126.90556154650361,False,no close match
+May_2025_to_May_2026,2,23,110.3118993505749,False,no close match
+May_2025_to_May_2026,3,23,216.3148270533911,False,no close match
+May_2025_to_May_2026,4,23,0.44399089102920608,True,close positional match; not motion-confirmed
+May_2025_to_May_2026,5,25,101.55818982573371,False,no close match
+May_2025_to_May_2026,6,29,0.2996116681332292,True,close positional match; not motion-confirmed
+April_2025_to_May_2026,1,23,111.0403356516107,False,no close match
+April_2025_to_May_2026,2,25,102.75797897619729,False,no close match
+April_2025_to_May_2026,3,25,216.22054374299361,False,no close match

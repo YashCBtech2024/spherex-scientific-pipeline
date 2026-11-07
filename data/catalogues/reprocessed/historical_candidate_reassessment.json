@@ -1,0 +1,34 @@
+[
+  {
+    "historical_2025_id": "4",
+    "historical_2026_id": "23",
+    "historical_separation_arcsec": 0.4439908915557491,
+    "2025-05-09": {
+      "detection_index": 3,
+      "separation_arcsec": 0.2043183174940088,
+      "within_2arcsec": true
+    },
+    "2026-05-26": {
+      "detection_index": 3,
+      "separation_arcsec": 1.0125890860926297,
+      "within_2arcsec": true
+    },
+    "status": "historical pair; re-identification is uncertain because catalogue centroids/WCS solutions differ; not a motion classification"
+  },
+  {
+    "historical_2025_id": "6",
+    "historical_2026_id": "29",
+    "historical_separation_arcsec": 0.2996116684506137,
+    "2025-05-09": {
+      "detection_index": 3,
+      "separation_arcsec": 135.51971641529826,
+      "within_2arcsec": false
+    },
+    "2026-05-26": {
+      "detection_index": 3,
+      "separation_arcsec": 134.8572844479796,
+      "within_2arcsec": false
+    },
+    "status": "historical pair; re-identification is uncertain because catalogue centroids/WCS solutions differ; not a motion classification"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "epochs": [
+    {
+      "epoch": "2025-04-25",
+      "fits": "data\\processed\\aligned_validated\\2025-04-25_common_aligned.fits",
+      "shape_yx": [
+        60,
+        62
+      ],
+      "bunit": "MJy / sr",
+      "finite_pixel_count": 2259
+    },
+    {
+      "epoch": "2025-05-09",
+      "fits": "data\\processed\\aligned_validated\\2025-05-09_common_aligned.fits",
+      "shape_yx": [
+        60,
+        62
+      ],
+      "bunit": "MJy / sr",
+      "finite_pixel_count": 2259
+    },
+    {
+      "epoch": "2026-05-26",
+      "fits": "data\\processed\\aligned_validated\\2026-05-26_common_aligned.fits",
+      "shape_yx": [
+        60,
+        62
+      ],
+      "bunit": "MJy / sr",
+      "finite_pixel_count": 2259
+    }
+  ],
+  "shape_yx": [
+    60,
+    62
+  ],
+  "shared_wcs": "WCSAXES =                    2 / Number of coordinate axes                      CRPIX1  =                 31.5 / Pixel coordinate of reference point            CRPIX2  =                 30.5 / Pixel coordinate of reference point            PC1_1   =  -0.0017083333333333 / Coordinate transformation matrix element       PC2_2   =   0.0017083333333333 / Coordinate transformation matrix element       CDELT1  =                  1.0 / [deg] Coordinate increment at reference point  CDELT2  =                  1.0 / [deg] Coordinate increment at reference point  CUNIT1  = 'deg'                / Units of coordinate increment and value        CUNIT2  = 'deg'                / Units of coordinate increment and value        CTYPE1  = 'RA---TAN'           / Right ascension, gnomonic projection           CTYPE2  = 'DEC--TAN'           / Declination, gnomonic projection               CRVAL1  =         151.81441452 / [deg] Coordinate value at reference point      CRVAL2  =           2.82631029 / [deg] Coordinate value at reference point      LONPOLE =                180.0 / [deg] Native longitude of celestial pole       LATPOLE =           2.82631029 / [deg] Native latitude of celestial pole        MJDREF  =                  0.0 / [d] MJD of fiducial time                       RADESYS = 'ICRS'               / Equatorial coordinate system                   END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ",
+  "coverage_mask": "data\\processed\\aligned_validated\\three_epoch_common_coverage_mask.fits",
+  "common_valid_pixel_count": 2259,
+  "masked_pixel_count": 1461,
+  "total_grid_pixel_count": 3720,
+  "coverage_fraction": 0.6072580645161291,
+  "valid_sky_area_sqdeg": 0.00659267187499974,
+  "pixel_area_arcsec2": 37.822499999998506,
+  "pixel_scale_matrix_deg_per_pixel": [
+    [
+      -0.0017083333333333,
+      0.0
+    ],
+    [
+      0.0,
+      0.0017083333333333
+    ]
+  ],
+  "coverage_threshold": ">= 1 - 1e-6 reproject footprint",
+  "method": "Each original cutout reprojected through its full WCS (including SIP) to preliminary shared TAN WCS; bilinear interpolation.",
+  "limitations": "Reprojection interpolates and correlates pixels. Finite pixels are covered in every input, but are not source-registered; remaining pointing/WCS offsets are not object motion."
+}
