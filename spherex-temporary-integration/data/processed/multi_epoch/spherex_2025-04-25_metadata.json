@@ -1,0 +1,47 @@
+{
+  "observation_id": "spherex_2025-04-25",
+  "source_fits": "data\\raw\\level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits",
+  "image_extension": "IMAGE",
+  "timestamp_utc": "2025-04-25T00:42:57.413",
+  "bunit": "MJy / sr",
+  "cutout_center_requested_deg": {
+    "ra": 151.81441452,
+    "dec": 2.82631029
+  },
+  "cutout_center_actual_deg": {
+    "ra": 151.8144145155818,
+    "dec": 2.8263102919986816
+  },
+  "size_pixels_yx": [
+    48,
+    48
+  ],
+  "background_median": 0.25208936631679535,
+  "background_rms_robust": 0.01961450481712818,
+  "wcs_validation": {
+    "roundtrip_error_pixel": 8.586772327350743e-11,
+    "center_ra_deg": 151.81408414089867,
+    "center_dec_deg": 2.8255222268829456,
+    "pixel_scales_arcsec": [
+      6.237253329120899,
+      6.069632884342236
+    ],
+    "has_sip": true
+  },
+  "original_wcs_header_preserved": true,
+  "visualization": {
+    "stretch": "asinh",
+    "percentile_limits": [
+      1.0,
+      99.5
+    ],
+    "colorbar_label": "MJy / sr",
+    "data_min": -2.4078589528799057,
+    "data_max": 14.935697689652443,
+    "unit": "MJy / sr"
+  },
+  "cutout_fits": "data\\processed\\multi_epoch\\spherex_2025-04-25_cutout.fits",
+  "png": "data\\processed\\multi_epoch\\spherex_2025-04-25_cutout.png",
+  "metadata": "data\\processed\\multi_epoch\\spherex_2025-04-25_metadata.json",
+  "background_subtracted": true
+}

@@ -1,0 +1,11 @@
+# Python 3.12 dependencies for the self-contained Streamlit + FastAPI demo.
+streamlit>=1.40.0
+plotly>=5.24.0
+requests>=2.32.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.8.0
+numpy>=2.0.0
+astropy>=6.1.0
+pandas>=2.2.0
+pillow>=10.4.0
