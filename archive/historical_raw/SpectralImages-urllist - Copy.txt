@@ -1,2 +1,0 @@
-# Date: Fri Nov 06 08:38:28 PST 2026 --- Download SPHEREx data from IRSA 
-https://irsa.ipac.caltech.edu/ibe/data/spherex/qr2/level2/2025W17_4B/l2b-v20-2025-241/1/level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits
