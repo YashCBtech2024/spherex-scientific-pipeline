@@ -80,3 +80,4 @@
 - Removed three empty placeholder packages (`science/astrometry`, `science/detection`, `science/matching`) after confirming they contained only empty initializers and had no code references.
 - Moved the non-identical v2/v3 PNG and JSON outputs out of the active test-region folder to `archive/processed_variants/test_region/`; their duplicate FITS pixel arrays remain local and ignored, with the canonical FITS retained.
 - Added pytest discovery configuration restricting default collection to `tests/`, so archived exploratory query scripts are not mistaken for automated tests.
+- Replaced unsupported “confirmed star” text in the saved Gaia candidate table and epoch metadata with unconfirmed/unverified status; recorded numeric measurements were preserved.

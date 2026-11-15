@@ -153,7 +153,7 @@ The following files were saved during the validation process:
 | File | Description |
 |---|---|
 | `data/external/gaia_dr3_raw_candidates.csv` | Saved Gaia rows; query-response provenance is unverified |
-| `data/external/gaia_dr3_crossmatch_table.csv` | Historical candidate associations; unverified, not confirmed classifications |
+| `data/external/gaia_dr3_crossmatch_table.csv` | Historical candidate associations; numeric entries retained, classification labels corrected to unconfirmed because query provenance is unverified |
 | `data/external/jpl_sb_ident_raw_candidates.json` | JPL sb_ident API error log |
 | `data/external/skybot_solar_system_matches.json` | IMCCE SkyBoT error log |
 
