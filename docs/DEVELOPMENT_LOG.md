@@ -72,3 +72,11 @@
 - Compared archive copies to canonical active files using SHA-256; 12 exact duplicate archive files are retained locally and excluded from Git. Active copies in `data/raw/`, `data/catalogues/`, and `data/external/` remain tracked.
 - Confirmed the unsuffixed May 2025 test-region FITS and `_v2_`/`_v3_` FITS have the same SHA-256. Kept the unsuffixed canonical file tracked; the suffixed copies remain local and ignored. PNG and JSON variants were not identical and were left alone.
 - Kept the new dependency, portable-path, wavelength-diagnostic, and test updates in the repository.
+
+## 2026-11-15 — Catalogue and scratch-file cleanup
+
+- Renamed `candidate_associations_validated.csv` to `candidate_associations_provisional.csv`; both classification labels now read `Unconfirmed; Gaia association unverified`. Numeric historical fields were left unchanged.
+- Moved the 23 Python files from `science/validation/` to `archive/science_validation/` without altering their contents. This is 22 exploratory scripts plus the empty package initializer; seven scripts use the `test_*.py` filename pattern and are not the automated unit-test suite.
+- Removed three empty placeholder packages (`science/astrometry`, `science/detection`, `science/matching`) after confirming they contained only empty initializers and had no code references.
+- Moved the non-identical v2/v3 PNG and JSON outputs out of the active test-region folder to `archive/processed_variants/test_region/`; their duplicate FITS pixel arrays remain local and ignored, with the canonical FITS retained.
+- Added pytest discovery configuration restricting default collection to `tests/`, so archived exploratory query scripts are not mistaken for automated tests.

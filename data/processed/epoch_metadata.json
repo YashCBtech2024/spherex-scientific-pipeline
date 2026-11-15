@@ -121,7 +121,7 @@
       "gaia_distance_pc": 1332,
       "gaia_pm_total_mas_yr": 5.00,
       "gaia_ruwe": 1.024,
-      "classification": "Validated stationary-source association (confirmed Galactic star)",
+      "classification": "Unconfirmed; Gaia association unverified",
       "wcs_systematic_fraction": 0.99
     },
     {
@@ -142,7 +142,7 @@
       "gaia_distance_pc": 449,
       "gaia_pm_total_mas_yr": 16.72,
       "gaia_ruwe": 1.105,
-      "classification": "Validated stationary-source association (confirmed Galactic star)",
+      "classification": "Unconfirmed; Gaia association unverified",
       "wcs_systematic_fraction": 0.94
     }
   ],

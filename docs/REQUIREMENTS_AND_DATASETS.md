@@ -22,12 +22,14 @@
 ---
 
 ## 2. Scientific & Pipeline Scripts
-The following core pipeline components will be built in `science/`:
-1. `science/astrometry/wcs_calibrator.py`: Cross-checks WCS solution against Gaia DR3 reference stars.
-2. `science/detection/source_extractor.py`: Automated detection script verifying the 51 historical sources.
-3. `science/matching/epoch_matcher.py`: Cross-epoch coordinate matching with motion vector calculation.
-4. `science/validation/motion_validator.py`: Velocity and direction validation, checking against Solar System dynamical limits and JPL Horizons known bodies.
-5. `science/utils/fits_viewer_util.py`: Cutout extraction and multi-epoch blink image generation for the web frontend.
+
+Implemented modules are listed in the repository README and scientific handoff. The following capabilities remain unfinished and must not be treated as completed modules:
+
+1. Independent Gaia-based astrometric refinement and uncertainty estimation.
+2. A one-to-one, uncertainty-aware cross-epoch association pipeline.
+3. Solar System object identification using successful, reproducible ephemeris queries.
+
+Exploratory scripts from earlier query and audit attempts are preserved under `archive/science_validation/`. They are historical records, not supported pipeline modules or automated tests.
 
 ---
 

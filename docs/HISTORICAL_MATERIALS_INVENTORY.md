@@ -98,7 +98,7 @@ To keep the public repository focused, SHA-256 comparisons were made between `ar
 | `source_detections_batch1.csv` | `data/catalogues/source_detections_batch1.csv` |
 | `spherex_irsa_query_results.vot` | `data/external/spherex_irsa_query_results.vot` |
 
-The unsuffixed `data/processed/test_region/spherex_may2025_d1_cutout.fits` is retained as the canonical test-region FITS. Its `_v2_` and `_v3_` FITS variants have the same SHA-256 (`F9C541E5BF0A19092055C26F3436AC44228CDCE11641A01179F89AA3882969F5`); those local copies remain on disk but are excluded from Git. The associated PNG and JSON variants were not byte-identical and were preserved.
+The unsuffixed `data/processed/test_region/spherex_may2025_d1_cutout.fits` is retained as the canonical test-region FITS. Its `_v2_` and `_v3_` FITS variants have the same SHA-256 (`F9C541E5BF0A19092055C26F3436AC44228CDCE11641A01179F89AA3882969F5`); those local copies remain on disk but are excluded from Git. The non-identical PNG and JSON variants were moved to `archive/processed_variants/test_region/`; their metadata records the original output paths.
 
 The locally retained `applications/` reference snapshots and `spherex-temporary-integration/` working copy are excluded from the public repository to avoid bundling repeated application/science trees. The teammate code remains available from the separate public repositories linked in `README.md`; local folders were preserved and added to `.gitignore`.
 
