@@ -37,6 +37,28 @@ data/processed/.mplconfig/
 # Teammate reference checkouts are separate repositories and must not be nested here
 reference_repos/
 
+# Local-only source snapshots and temporary integration build; upstream links are in README
+/applications/
+/spherex-temporary-integration/
+
+# Verified byte-identical historical copies retained locally; canonical copies live elsewhere
+/archive/historical_raw/candidate_motion_associations.csv
+/archive/historical_raw/daofind_detections_10_sources.csv
+/archive/historical_raw/epoch_comparison_crossmatch.csv
+/archive/historical_raw/level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits
+/archive/historical_raw/level2_2025W19_2B_0103_1D1_spx_l2b-v20-2025-247.fits
+/archive/historical_raw/level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150.fits
+/archive/historical_raw/level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150(1).fits
+/archive/historical_raw/may2025_may2026_candidate_associations.csv
+/archive/historical_raw/photometry_snr_measurements.csv
+/archive/historical_raw/source_detections_51_catalogue.csv
+/archive/historical_raw/source_detections_batch1.csv
+/archive/historical_raw/spherex_irsa_query_results.vot
+
+# Byte-identical May 2025 test-region FITS variants; retain the unsuffixed canonical file
+/data/processed/test_region/spherex_may2025_d1_v2_cutout.fits
+/data/processed/test_region/spherex_may2025_d1_v3_cutout.fits
+
 # Credentials and local configuration
 .env
 .env.*
@@ -50,4 +72,4 @@ reference_repos/
 secrets.toml
 credentials.json
 
-# Scientific FITS, CSV, notebooks, reports and handoff ZIPs are intentionally tracked.
+# Canonical scientific FITS, CSVs, notebooks and reports are tracked; exact duplicates may be excluded below.

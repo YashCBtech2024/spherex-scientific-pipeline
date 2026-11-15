@@ -65,3 +65,10 @@
 - Existing catalogue detections mapped successfully with no out-of-footprint sources: 5/5, 7/7, 7/7. Approximate wavelength ranges are 0.90202–0.90693 µm (Apr 25), 0.90183–0.90805 µm (May 9), and 0.91297–0.91996 µm (May 26); these are WCS-WAVE diagnostics, not calibrated bandpasses.
 - Added `per_epoch_photometry_not_lightcurve_v1.png`, preserving the earlier figure and explicitly warning that the points are not matched sources or wavelength-matched variability measurements.
 - Added four focused wavelength tests; focused run: **4 passed**. Full test suite: **11 passed**. Pytest emitted an existing pytest-asyncio configuration deprecation warning; no test failures.
+
+## 2026-11-15 — Repository deduplication
+
+- Removed the copied `applications/` and `spherex-temporary-integration/` trees from the published repository while preserving both local folders; `.gitignore` keeps them local-only. README now links to the teammates' separate repositories.
+- Compared archive copies to canonical active files using SHA-256; 12 exact duplicate archive files are retained locally and excluded from Git. Active copies in `data/raw/`, `data/catalogues/`, and `data/external/` remain tracked.
+- Confirmed the unsuffixed May 2025 test-region FITS and `_v2_`/`_v3_` FITS have the same SHA-256. Kept the unsuffixed canonical file tracked; the suffixed copies remain local and ignored. PNG and JSON variants were not identical and were left alone.
+- Kept the new dependency, portable-path, wavelength-diagnostic, and test updates in the repository.

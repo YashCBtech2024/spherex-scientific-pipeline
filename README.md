@@ -1,6 +1,6 @@
 # SPHEREx Scientific Pipeline
 
-Scientific processing contribution for the NASA SPHEREx challenge and its public-facing sky exploration application. This repository contains the reproducible science-side FITS/WCS workflow, three-epoch cutouts and alignment, preliminary source analysis, tests, integration handoff materials, and read-only source snapshots of the teammate backend and frontend under `applications/`.
+Scientific processing contribution for the NASA SPHEREx challenge and its public-facing sky exploration application. This repository contains the reproducible science-side FITS/WCS workflow, three-epoch cutouts and alignment, preliminary source analysis, tests, and integration handoff materials. The teammate applications remain in their separate repositories; this repository does not bundle copies of their code.
 
 ## Scientific objective
 
@@ -31,8 +31,6 @@ Photometry is an uncorrected aperture measurement converted from MJy/sr using pi
 | Path | Purpose |
 |---|---|
 | `science/` | FITS pipeline, WCS alignment, common mask, source analysis and integration exporter |
-| `applications/backend/` | Source snapshot of YashCBtech2024/Backend at the commit recorded in `applications/README.md` |
-| `applications/frontend/` | Source snapshot of YashCBtech2024/Frontend at the commit recorded in `applications/README.md` |
 | `data/raw/` | Original FITS observations |
 | `data/processed/` | Individual cutouts, aligned products, masks, metadata and PNG comparisons |
 | `data/catalogues/` | Preserved historical tables and new preliminary analysis catalogues |
@@ -70,7 +68,7 @@ Latest recorded software test result: **7 automated tests passed**. These are so
 
 ## Application integration
 
-Source snapshots of the teammate applications are included under `applications/` so the team can review the code in the main project. They were copied from the public repositories at the exact commits documented in [applications/README.md](applications/README.md); their Git history and `.git` directories are not nested here. The original teammate repositories were not modified. These snapshots retain the applications as developed; they are not, by themselves, proof that the production app consumes this repository's scientific outputs. Integration exports and exact schema limitations are described in [docs/INTEGRATION_REQUIREMENTS.md](docs/INTEGRATION_REQUIREMENTS.md) and [docs/TEAMMATE_INTEGRATION_HANDOFF.md](docs/TEAMMATE_INTEGRATION_HANDOFF.md).
+The teammate applications are maintained separately: [backend](https://github.com/YashCBtech2024/Backend) and [frontend](https://github.com/YashCBtech2024/Frontend). This repository does not copy or modify them. Integration exports and exact schema limitations are described in [docs/INTEGRATION_REQUIREMENTS.md](docs/INTEGRATION_REQUIREMENTS.md) and [docs/TEAMMATE_INTEGRATION_HANDOFF.md](docs/TEAMMATE_INTEGRATION_HANDOFF.md).
 
 The current backend requires non-null significance and classification fields that these preliminary outputs cannot scientifically provide. The provisional payload deliberately leaves those values null and is marked incompatible until teammates support preliminary records. Do not promote candidates to confirmed classifications based on these products.
 

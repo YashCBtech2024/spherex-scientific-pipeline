@@ -79,6 +79,29 @@ The hash scan also found repeated zero-byte `.gitkeep` placeholders; these are e
 
 SHA-256 was used for exact byte comparison, not scientific validity. ZIP/notebook/workbook open checks were not applicable because no such files were found. This targeted follow-up did not repeat scientific analyses or alter the earlier scientific records.
 
+## Public-repository deduplication (2026-11-15)
+
+To keep the public repository focused, SHA-256 comparisons were made between `archive/historical_raw/` and the active raw/catalogue/external-data folders. The following byte-identical archive copies are retained in the local workspace but excluded from Git; the active counterparts remain tracked:
+
+| Local archive copy | Tracked canonical copy |
+|---|---|
+| `candidate_motion_associations.csv` | `data/catalogues/candidate_motion_associations.csv` |
+| `daofind_detections_10_sources.csv` | `data/catalogues/daofind_detections_10_sources.csv` |
+| `epoch_comparison_crossmatch.csv` | `data/catalogues/epoch_comparison_crossmatch.csv` |
+| `level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits` | Same filename in `data/raw/` |
+| `level2_2025W19_2B_0103_1D1_spx_l2b-v20-2025-247.fits` | Same filename in `data/raw/` |
+| `level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150.fits` | Same filename in `data/raw/` |
+| `level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150(1).fits` | Same filename in `data/raw/` |
+| `may2025_may2026_candidate_associations.csv` | `data/catalogues/may2025_may2026_candidate_associations.csv` |
+| `photometry_snr_measurements.csv` | `data/catalogues/photometry_snr_measurements.csv` |
+| `source_detections_51_catalogue.csv` | `data/catalogues/source_detections_51_catalogue.csv` |
+| `source_detections_batch1.csv` | `data/catalogues/source_detections_batch1.csv` |
+| `spherex_irsa_query_results.vot` | `data/external/spherex_irsa_query_results.vot` |
+
+The unsuffixed `data/processed/test_region/spherex_may2025_d1_cutout.fits` is retained as the canonical test-region FITS. Its `_v2_` and `_v3_` FITS variants have the same SHA-256 (`F9C541E5BF0A19092055C26F3436AC44228CDCE11641A01179F89AA3882969F5`); those local copies remain on disk but are excluded from Git. The associated PNG and JSON variants were not byte-identical and were preserved.
+
+The locally retained `applications/` reference snapshots and `spherex-temporary-integration/` working copy are excluded from the public repository to avoid bundling repeated application/science trees. The teammate code remains available from the separate public repositories linked in `README.md`; local folders were preserved and added to `.gitignore`.
+
 ---
 
 ## Google Colab Historical Intake (2026-11-07)
