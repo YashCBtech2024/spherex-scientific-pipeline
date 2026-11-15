@@ -11,13 +11,22 @@ pandas>=2.0.0
 reproject>=0.13.0
 scikit-image>=0.21.0
 pillow>=10.0.0
+shapely>=2.0.0
 
-# Backend & API
+# API backend
 fastapi>=0.110.0
 uvicorn[standard]>=0.29.0
 pydantic>=2.6.0
 python-multipart>=0.0.9
 
+# Read-only teammate frontend snapshot / temporary demo
+streamlit>=1.40.0
+plotly>=5.24.0
+requests>=2.32.0
+
 # Testing & Quality
 pytest>=8.0.0
 pytest-asyncio>=0.23.0
+
+# FFmpeg is an external command-line application used for video rendering;
+# install it separately from https://ffmpeg.org/download.html (not with pip).

@@ -83,7 +83,7 @@ SHA-256 was used for exact byte comparison, not scientific validity. ZIP/noteboo
 
 ## Google Colab Historical Intake (2026-11-07)
 
-Intake-only pass per user instruction. Files were copied from `C:\Users\yashc\Downloads` into `archive/historical_raw/`, retaining supplied names. No source file was opened for scientific-content review in this pass; no files in Downloads were modified or deleted.
+Intake-only pass per user instruction. Files were copied from the source computer's Downloads folder into `archive/historical_raw/`, retaining supplied names. No source file was opened for scientific-content review in this pass; no files in Downloads were modified or deleted.
 
 - **28 supplied filenames accounted for:** 21 newly copied and SHA-256 verified; 6 already existed in the archive with matching SHA-256 and were left in place; 1 duplicate ZIP was not recopied.
 - **Duplicate ZIP:** `SphereX_Data.zip` has the same SHA-256 as `SPHEREx_Scientific_Data_Package.zip`. One copy is archived as `SPHEREx_Scientific_Data_Package.zip`; the duplicate filename and identical hash are recorded by this entry.

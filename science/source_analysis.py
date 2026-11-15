@@ -91,5 +91,7 @@ def run_catalogues(aligned_dir:Path, mask_path:Path, outdir:Path, radius_arcsec:
     fig.tight_layout();fig.savefig(outdir/'three_epoch_source_overlays.png');plt.close(fig)
     fig,ax=plt.subplots(figsize=(7,4))
     for epoch,rows in catalogues.items():ax.scatter([i+1 for i,_ in enumerate(rows)],[r['flux_Jy_uncorrected'] for r in rows],label=epoch)
-    ax.set(xlabel='Detection index (not cross-epoch ID)',ylabel='Aperture flux (Jy; uncorrected)',title='Per-epoch detected-source fluxes');ax.legend();fig.tight_layout();fig.savefig(outdir/'per_epoch_photometry.png');plt.close(fig)
+    ax.set(xlabel='Detection index (not cross-epoch ID)',ylabel='Aperture flux (Jy; uncorrected)',title='Epoch aperture measurements — not a light curve')
+    fig.text(0.5,0.01,'Wavelengths/bandpasses are not matched; points are not cross-epoch source associations.',ha='center',fontsize=8)
+    ax.legend();fig.tight_layout(rect=(0,0.05,1,1));fig.savefig(outdir/'per_epoch_photometry.png');plt.close(fig)
     return catalogues,master

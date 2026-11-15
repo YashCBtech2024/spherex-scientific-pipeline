@@ -54,3 +54,14 @@
 - Re-ran full tests immediately before packaging: **7 passed**.
 - Verified ZIP CRCs and unique/exact archive member list (77 files); package includes root README, test results and per-file inventory/hash manifest.
 - Package SHA-256 and size recorded in `docs/HANDOFF_PACKAGE_INVENTORY.md` and sidecar `.sha256`.
+
+## 2026-11-15 — Spectral-coordinate audit
+
+- Confirmed the science photometry routine previously read only the aligned 2D IMAGE arrays; it did not read the `WCS-WAVE` table. Its existing epoch plot groups by detection row, not source identity, and was not a light curve.
+- Added `science/spectral_wavelength.py` to evaluate the alternate tabular spectral WCS at original-image sky positions, returning approximate wavelength and bandwidth with explicit diagnostic provenance. Celestial SIP distortion is not applied to the separate spectral alternate WCS.
+- Added `science/spectral_audit.py`; it maps existing catalogue coordinates to the original FITS files and writes new versioned diagnostics. Existing measurements/catalogues remain untouched.
+- IRSA's data-product documentation recommends CWAVE/CBAND calibration maps for science analysis; those products are not present here. WCS-WAVE diagnostics do not establish comparable bandpasses, and cross-epoch flux differences must not be interpreted as variability.
+- Updated README/handoff language and the future-generated plot annotation to explicitly say the flux plot is not a light curve.
+- Existing catalogue detections mapped successfully with no out-of-footprint sources: 5/5, 7/7, 7/7. Approximate wavelength ranges are 0.90202–0.90693 µm (Apr 25), 0.90183–0.90805 µm (May 9), and 0.91297–0.91996 µm (May 26); these are WCS-WAVE diagnostics, not calibrated bandpasses.
+- Added `per_epoch_photometry_not_lightcurve_v1.png`, preserving the earlier figure and explicitly warning that the points are not matched sources or wavelength-matched variability measurements.
+- Added four focused wavelength tests; focused run: **4 passed**. Full test suite: **11 passed**. Pytest emitted an existing pytest-asyncio configuration deprecation warning; no test failures.

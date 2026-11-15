@@ -1,6 +1,6 @@
 # SPHEREx Scientific Pipeline
 
-Scientific processing contribution for the NASA SPHEREx challenge and its public-facing sky exploration application. This repository contains the reproducible science-side FITS/WCS workflow, three-epoch cutouts and alignment, preliminary source analysis, tests, and integration handoff materials. Teammate backend and frontend reference repositories are not part of this repository.
+Scientific processing contribution for the NASA SPHEREx challenge and its public-facing sky exploration application. This repository contains the reproducible science-side FITS/WCS workflow, three-epoch cutouts and alignment, preliminary source analysis, tests, integration handoff materials, and read-only source snapshots of the teammate backend and frontend under `applications/`.
 
 ## Scientific objective
 
@@ -10,7 +10,7 @@ Build reliable, reusable processing for SPHEREx Level 2 observations that suppor
 
 The test set contains April 25, 2025; May 9, 2025; and May 26, 2026 D1-named observations. Three original FITS observations and historical project materials are included under `data/raw/` and `archive/historical_raw/`. These FITS files are each about 5–5.5 MB; the scientific handoff ZIP is about 13 MB, below GitHub's individual-file limit.
 
-The historical catalogue contains 51 preliminary detections, and two close May 2025–May 2026 associations. Neither association is a confirmed moving object. External Gaia/JPL/SkyBoT validation remains incomplete or has unresolved provenance.
+The historical source catalogue contains 51 preliminary detections. This is the number of catalogue entries, not the number of detections scientifically validated. Two close May 2025–May 2026 associations were reported historically; neither is a confirmed moving object. External Gaia/JPL/SkyBoT validation remains incomplete or has unresolved provenance.
 
 ## Methodology and current results
 
@@ -22,6 +22,8 @@ The historical catalogue contains 51 preliminary detections, and two close May 2
 - Preliminary DAOStarFinder detection and circular-aperture photometry on masked aligned data, using identical settings per epoch.
 - Provisional sky-coordinate associations and historical candidate reassessment.
 
+The plotted epoch fluxes are per-detection measurements, not a light curve: row indices are not source identities, and the observations have not been matched to a common wavelength/bandpass. Each Level 2 image includes a `WCS-WAVE` alternate wavelength lookup, but it is not read by the photometry calculation. The project now exports approximate per-detection `WCS-WAVE` diagnostics; IRSA recommends its `CWAVE`/`CBAND` calibration maps for scientific analysis, and those maps are not present here. Do not interpret cross-epoch flux differences as variability.
+
 Photometry is an uncorrected aperture measurement converted from MJy/sr using pixel solid angle. Empirical RMS errors assume independent pixels and omit covariance introduced by bilinear interpolation; they may be optimistic. No PSF/aperture correction, absolute photometric calibration, or Gaia-based astrometric refinement has been completed. Shared-grid alignment does not eliminate residual pointing error; do not interpret it as physical source motion.
 
 ## Repository layout
@@ -29,6 +31,8 @@ Photometry is an uncorrected aperture measurement converted from MJy/sr using pi
 | Path | Purpose |
 |---|---|
 | `science/` | FITS pipeline, WCS alignment, common mask, source analysis and integration exporter |
+| `applications/backend/` | Source snapshot of YashCBtech2024/Backend at the commit recorded in `applications/README.md` |
+| `applications/frontend/` | Source snapshot of YashCBtech2024/Frontend at the commit recorded in `applications/README.md` |
 | `data/raw/` | Original FITS observations |
 | `data/processed/` | Individual cutouts, aligned products, masks, metadata and PNG comparisons |
 | `data/catalogues/` | Preserved historical tables and new preliminary analysis catalogues |
@@ -62,11 +66,11 @@ Run the suite from the repository root:
 .venv312\Scripts\python.exe -m pytest tests -q
 ```
 
-Latest recorded result: **7 tests passed**. See [docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md).
+Latest recorded software test result: **7 automated tests passed**. These are software checks, not validation of 7 out of the 51 source detections. The 51 detections remain preliminary and have not all been scientifically validated. An earlier full-suite run timed out; the development log records a later completed run with 7 passing tests. See [docs/DEVELOPMENT_LOG.md](docs/DEVELOPMENT_LOG.md).
 
 ## Application integration
 
-The teammate backend/frontend repositories are separate projects. This repository does not rebuild or modify them. Integration exports and exact schema limitations are described in [docs/INTEGRATION_REQUIREMENTS.md](docs/INTEGRATION_REQUIREMENTS.md) and [docs/TEAMMATE_INTEGRATION_HANDOFF.md](docs/TEAMMATE_INTEGRATION_HANDOFF.md).
+Source snapshots of the teammate applications are included under `applications/` so the team can review the code in the main project. They were copied from the public repositories at the exact commits documented in [applications/README.md](applications/README.md); their Git history and `.git` directories are not nested here. The original teammate repositories were not modified. These snapshots retain the applications as developed; they are not, by themselves, proof that the production app consumes this repository's scientific outputs. Integration exports and exact schema limitations are described in [docs/INTEGRATION_REQUIREMENTS.md](docs/INTEGRATION_REQUIREMENTS.md) and [docs/TEAMMATE_INTEGRATION_HANDOFF.md](docs/TEAMMATE_INTEGRATION_HANDOFF.md).
 
 The current backend requires non-null significance and classification fields that these preliminary outputs cannot scientifically provide. The provisional payload deliberately leaves those values null and is marked incompatible until teammates support preliminary records. Do not promote candidates to confirmed classifications based on these products.
 

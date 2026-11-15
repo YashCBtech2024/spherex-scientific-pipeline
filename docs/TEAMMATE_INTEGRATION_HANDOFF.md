@@ -14,8 +14,9 @@ All paths are relative to project root:
 - `data/catalogues/reprocessed/three_epoch_master_associations.csv` and `.json` — provisional coordinate associations.
 - `data/catalogues/reprocessed/historical_candidate_reassessment.json` — positions rechecked against new detections.
 - `data/catalogues/reprocessed/{epoch}_detections_photometry.csv` — per-epoch source tables.
+- `data/catalogues/reprocessed/wcs_wave_diagnostics_v1.csv` and `.json` — approximate per-detection wavelength/bandwidth diagnostics from original-image WCS-WAVE; not a calibrated bandpass match.
 - `data/processed/aligned_validated/{epoch}_common_aligned.fits`, `three_epoch_common_coverage_mask.fits`, and `three_epoch_common_comparison_v2.png` — aligned science images and shared validity mask.
-- `data/catalogues/reprocessed/three_epoch_source_overlays.png` and `per_epoch_photometry.png` — diagnostic plots.
+- `data/catalogues/reprocessed/three_epoch_source_overlays.png`, `per_epoch_photometry.png`, and `per_epoch_photometry_not_lightcurve_v1.png` — diagnostic plots. The versioned plot explicitly states that epoch flux points are not matched source identities or a light curve.
 
 FITS outputs preserve shared TAN WCS. Original per-epoch cutouts retain their TAN-SIP WCS; reprojection evaluates the input SIP transform. Do not treat interpolated pixels as independent detector samples.
 

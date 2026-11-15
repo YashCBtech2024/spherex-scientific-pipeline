@@ -1,0 +1,39 @@
+{
+  "description": "Approximate wavelength diagnostics mapped from existing source positions through each raw image WCS and WCS-WAVE alternate WCS.",
+  "units": {
+    "ra_deg": "deg ICRS",
+    "dec_deg": "deg ICRS",
+    "wavelength_um_wcs_wave_approx": "um",
+    "bandwidth_um_wcs_wave_approx": "um"
+  },
+  "scientific_caveat": "IRSA recommends CWAVE/CBAND calibration maps for science analysis. They are not included in this workspace. These WCS-WAVE values are approximate diagnostics, not calibrated bandpasses; do not interpret flux differences as variability.",
+  "epochs": {
+    "2025-04-25": {
+      "input_fits": "data/raw/level2_2025W17_4B_0043_1D1_spx_l2b-v20-2025-241.fits",
+      "mapped_detections": 5,
+      "unmapped_detections": 0,
+      "wavelength_min_um_approx": 0.9020167366690799,
+      "wavelength_max_um_approx": 0.9069299046879726,
+      "wavelength_median_um_approx": 0.9053725562512622,
+      "interpretation": "WCS-WAVE diagnostic only; not a calibrated effective bandpass"
+    },
+    "2025-05-09": {
+      "input_fits": "data/raw/level2_2025W19_2B_0103_1D1_spx_l2b-v20-2025-247.fits",
+      "mapped_detections": 7,
+      "unmapped_detections": 0,
+      "wavelength_min_um_approx": 0.901833932296829,
+      "wavelength_max_um_approx": 0.9080469984688455,
+      "wavelength_median_um_approx": 0.9053499228127591,
+      "interpretation": "WCS-WAVE diagnostic only; not a calibrated effective bandpass"
+    },
+    "2026-05-26": {
+      "input_fits": "data/raw/level2_2026W22_1A_0214_2D1_spx_l2b-v25-2026-150.fits",
+      "mapped_detections": 7,
+      "unmapped_detections": 0,
+      "wavelength_min_um_approx": 0.9129686280438543,
+      "wavelength_max_um_approx": 0.9199550871121774,
+      "wavelength_median_um_approx": 0.916619319854769,
+      "interpretation": "WCS-WAVE diagnostic only; not a calibrated effective bandpass"
+    }
+  }
+}
