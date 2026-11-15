@@ -8,7 +8,7 @@ Build reliable, reusable processing for SPHEREx Level 2 observations that suppor
 
 ## Observations and data
 
-The test set contains April 25, 2025; May 9, 2025; and May 26, 2026 D1-named observations. Three original FITS observations and historical project materials are included under `data/raw/` and `archive/historical_raw/`. These FITS files are each about 5–5.5 MB; the scientific handoff ZIP is about 13 MB, below GitHub's individual-file limit.
+The test set contains April 25, 2025; May 9, 2025; and May 26, 2026 D1-named observations. `data/raw/` contains four FITS files across these three epochs; the May 2026 observation has two file variants. Historical materials are preserved under `archive/historical_raw/` where they are not exact duplicates of active files.
 
 The historical source catalogue contains 51 preliminary detections. This is the number of catalogue entries, not the number of detections scientifically validated. Two close May 2025–May 2026 associations were reported historically; neither is a confirmed moving object. External Gaia/JPL/SkyBoT validation remains incomplete or has unresolved provenance.
 

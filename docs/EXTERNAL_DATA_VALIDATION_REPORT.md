@@ -1,19 +1,19 @@
-# External Data Validation Report
+# Historical External Data-Query Review
 
-## SPHEREx Transient Candidate Cross-Matching with Archival Catalogs
+## SPHEREx Preliminary Source-Association Checks
 
-**Project:** SPHEREx Multi-Epoch Transient Detection Pipeline — Independent Verification  
+**Project:** SPHEREx Multi-Epoch Source Analysis — External Catalogue Review
 **Report Date:** 2026-11-07  
 **Author:** Automated Validation Pipeline  
-**Status:** COMPLETE
+**Status:** Partial
 
 ---
 
 ## 1. Executive Summary
 
-This report documents the external validation of two transient candidates identified by the SPHEREx multi-epoch photometric pipeline. Each candidate was cross-matched against the Gaia DR3 astrometric catalog via the IRSA TAP service, and Solar System object identification was attempted via the JPL Small-Body Identification (sb_ident) API and the IMCCE SkyBoT service.
+This report records earlier exploratory Gaia DR3 and Solar System object query attempts for two preliminary SPHEREx source associations. The provenance linking the saved Gaia rows to the stated query results is unverified. JPL and SkyBoT queries failed, so the Solar System check was not completed.
 
-**Key Finding:** Both candidates are unambiguously identified as Galactic field stars in Gaia DR3. The sub-arcsecond positional offsets observed between SPHEREx epochs are fully attributable to Level 2 WCS pointing systematics and do not represent real astrophysical motion. Neither candidate is a Solar System object.
+**Current interpretation:** Gaia cross-match consistent with stars; Solar System check not completed. The Gaia associations are not confirmed identities, and neither candidate is classified. The reported SPHEREx positional offsets have not been independently separated into pointing error and astrophysical motion.
 
 ---
 
@@ -40,7 +40,7 @@ This report documents the external validation of two transient candidates identi
 
 ### 4.1 Methodology
 
-Gaia DR3 was queried via the IRSA TAP service (`https://irsa.ipac.caltech.edu/TAP/sync`) using ADQL cone searches with a 5″ search radius centered on each SPHEREx candidate position. The query retrieved astrometric parameters (position, parallax, proper motion, RUWE) and broadband photometry (G, BP, RP).
+The historical analysis record says Gaia DR3 was queried through the IRSA TAP service (`https://irsa.ipac.caltech.edu/TAP/sync`) using ADQL cone searches with a 5″ search radius and requesting astrometry and broadband photometry. The provenance of the saved rows and their linkage to these query parameters have not been independently verified. All Gaia values below are therefore historical, unverified values; they are not validated catalogue matches.
 
 ### 4.2 Candidate 1
 
@@ -66,7 +66,7 @@ Gaia DR3 was queried via the IRSA TAP service (`https://irsa.ipac.caltech.edu/TA
 - SPHEREx observed displacement between epochs: **444 mas (0.444″)**
 - Ratio (observed / expected): **≈ 85×**
 
-**Interpretation:** The SPHEREx inter-epoch offset exceeds the Gaia-predicted proper motion by a factor of 85. This conclusively demonstrates that the observed offset is dominated by WCS pointing systematics and is not real astrophysical motion. The RUWE of 1.024 confirms an excellent single-star astrometric solution, ruling out unresolved binarity or other astrometric anomalies. The source is a confirmed distant Galactic star at ≈ 1.3 kpc.
+**Interpretation (conditional and unverified):** If the reported Gaia row is the correct counterpart, its tabulated proper motion is smaller than the historical SPHEREx offset. This comparison does not establish the source identity or determine the cause of the SPHEREx offset. The reported RUWE is a Gaia catalogue statistic and does not confirm the cross-match or rule out all source complexity. The source is not confirmed as a star by this project.
 
 ---
 
@@ -94,11 +94,11 @@ Gaia DR3 was queried via the IRSA TAP service (`https://irsa.ipac.caltech.edu/TA
 - SPHEREx observed displacement between epochs: **300 mas (0.300″)**
 - Ratio (observed / expected): **≈ 17×**
 
-**Interpretation:** Approximately 94% of the observed SPHEREx offset is attributable to WCS pointing systematics, with real proper motion contributing only ≈ 6% of the total displacement. The RUWE of 1.105 indicates a good astrometric solution. The source is a confirmed Galactic star at ≈ 449 pc. Its higher proper motion (16.7 mas yr⁻¹) is characteristic of a nearby disk star but remains far too small to account for the observed SPHEREx offset.
+**Interpretation (conditional and unverified):** If the reported Gaia row is the correct counterpart, its tabulated proper motion is smaller than the historical SPHEREx offset. The fraction attributed to WCS systematics cannot be established without validated source identity and independent astrometric calibration. The reported RUWE and distance do not confirm this candidate's identity or classification.
 
 ---
 
-## 5. Cross-Match Summary Table
+## 5. Historical Cross-Match Summary (Unverified Values)
 
 | Property | Candidate 1 | Candidate 2 |
 |---|---|---|
@@ -111,8 +111,8 @@ Gaia DR3 was queried via the IRSA TAP service (`https://irsa.ipac.caltech.edu/TA
 | **Expected Δ (382d)** | 5.23 mas | 17.50 mas |
 | **Observed Δ (SPHEREx)** | 444 mas | 300 mas |
 | **Ratio (obs/exp)** | 85× | 17× |
-| **WCS fraction** | > 99% | ≈ 94% |
-| **Classification** | Galactic star | Galactic star |
+| **Previously claimed WCS attribution** | > 99% (unverified) | ≈ 94% (unverified) |
+| **Classification** | Unconfirmed; reported Gaia association has unverified provenance | Unconfirmed; reported Gaia association has unverified provenance |
 
 ---
 
@@ -138,16 +138,11 @@ Gaia DR3 was queried via the IRSA TAP service (`https://irsa.ipac.caltech.edu/TA
 ```
 The Python 3.12.0 runtime on Windows lacked the root CA certificate for `vo.imcce.fr`.
 
-**Status:** ❌ FAILED (infrastructure limitation, not scientific)
+**Status:** ❌ FAILED (SSL verification error; no usable result)
 
-### 6.3 Alternative Solar System Exclusion
+### 6.3 Solar System Status
 
-Although both ephemeris services failed, Solar System objects are **conclusively excluded** on dynamical grounds:
-
-1. **Distance:** Both candidates have significant Gaia parallaxes (0.75 mas and 2.23 mas), placing them at 449–1332 pc — far beyond the Solar System.
-2. **Persistence:** Both sources are cataloged in Gaia DR3, requiring consistent detection across the 34-month Gaia mission baseline. Solar System objects would have moved tens of degrees during that interval.
-3. **Proper motion consistency:** The Gaia proper motions are precisely measured (σ < 0.02 mas yr⁻¹) and consistent with Galactic stellar kinematics, not the arc-minutes-per-day motion characteristic of asteroids or comets.
-4. **Photometric consistency:** G/BP/RP colors are consistent with main-sequence stars, not the reflected solar spectra of minor bodies.
+The earlier claim that Solar System objects were excluded is withdrawn. Failed JPL and SkyBoT requests provided no usable ephemeris matches or non-matches. Because the Gaia match provenance is unverified, the saved Gaia rows cannot substitute for a Solar System search. The Solar System check remains incomplete; no conclusion about Solar System identity is supported by this report.
 
 ---
 
@@ -157,8 +152,8 @@ The following files were saved during the validation process:
 
 | File | Description |
 |---|---|
-| `data/external/gaia_dr3_raw_candidates.csv` | Raw Gaia DR3 TAP query results |
-| `data/external/gaia_dr3_crossmatch_table.csv` | Cross-match table with classifications |
+| `data/external/gaia_dr3_raw_candidates.csv` | Saved Gaia rows; query-response provenance is unverified |
+| `data/external/gaia_dr3_crossmatch_table.csv` | Historical candidate associations; unverified, not confirmed classifications |
 | `data/external/jpl_sb_ident_raw_candidates.json` | JPL sb_ident API error log |
 | `data/external/skybot_solar_system_matches.json` | IMCCE SkyBoT error log |
 
@@ -166,25 +161,25 @@ The following files were saved during the validation process:
 
 ## 8. Limitations
 
-1. **JPL sb_ident API failure:** The Small-Body Identification service returned HTTP 400 for all queries. This may reflect API parameter format changes or temporary service issues. The failure does not affect scientific conclusions because Solar System objects are independently excluded by dynamical arguments (§6.3).
+1. **JPL sb_ident API failure:** The Small-Body Identification service returned HTTP 400 for all recorded queries. No usable result was obtained; this does not rule objects in or out.
 
-2. **IMCCE SkyBoT SSL failure:** The SkyBoT service could not be contacted due to missing root CA certificates in the local Python environment. This is an infrastructure issue, not a scientific limitation. Future runs should install the `certifi` package or configure system certificates.
+2. **IMCCE SkyBoT SSL failure:** The SkyBoT service could not be contacted because of an SSL certificate verification error. No usable result was obtained; the Solar System check remains incomplete.
 
-3. **Gaia DR3 epoch propagation:** Gaia DR3 positions are reported at epoch J2016.0. Proper-motion-propagated positions to the SPHEREx observation epochs would reduce the cross-match separations by a few mas, but this correction is negligible compared to the ~300 mas WCS systematics under investigation.
+3. **Gaia DR3 match provenance:** The saved Gaia rows have not been verified against the original TAP responses. Source IDs, separations, astrometry, photometry, and derived distances in this report are not validated matches and must not be used as confirmed classifications.
 
-4. **Distance estimates:** Distances quoted as 1/parallax are approximate. Bayesian distance estimates (e.g., Bailer-Jones et al. 2021) would provide more accurate values, but the qualitative conclusion — that both sources are distant Galactic stars — is robust.
+4. **SPHEREx astrometry:** No independent astrometric calibration or uncertainty model establishes whether the reported offsets arise from pointing, source matching, or physical motion. Do not infer motion from these offsets.
 
 ---
 
 ## 9. Conclusions
 
-1. **Both transient candidates are confirmed Galactic field stars** with precise Gaia DR3 astrometry (RUWE < 1.2).
+1. Historical Gaia rows were reported near both candidate positions and are, at most, consistent with stellar sources. Their provenance is unverified, so neither candidate is a confirmed Gaia match or confirmed star.
 
-2. **The observed inter-epoch positional offsets in SPHEREx data (0.27–0.44″) are 17–85× larger than expected from stellar proper motions**, confirming that the dominant source of apparent displacement is WCS pointing systematics in the SPHEREx Level 2 data products.
+2. Historical SPHEREx offsets are preliminary and have not been separated into pointing effects and astrophysical motion with independent astrometry. They are not evidence of confirmed motion.
 
-3. **Neither candidate is a Solar System object.** This is established by (a) significant stellar parallaxes, (b) persistence in the 34-month Gaia catalog, (c) proper motions consistent with Galactic stellar kinematics, and (d) stellar photometric colors.
+3. The JPL and SkyBoT queries failed. Solar System object identification or exclusion was not completed.
 
-4. **The SPHEREx multi-epoch transient detection pipeline is functioning correctly** in identifying positional offsets, but the offsets in this field are dominated by WCS systematics rather than astrophysical variability or motion.
+4. Candidate classifications remain unverified. Reproducible Gaia query provenance, astrometric validation, and successful Solar System queries are required before stronger conclusions.
 
 ---
 
